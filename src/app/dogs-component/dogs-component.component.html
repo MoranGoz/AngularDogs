@@ -1,0 +1,12 @@
+<p>
+  dogs-component works!
+</p>
+<ul>
+  
+  <mat-card *ngFor="let dog of dogs; let idx = index">
+      <span>{{ind + 1}}) {{dog.name | uppercase}} - {{dog.weight}}kgs - owned by {{ dog.owner }} -  {{ dog.birthday | date : format() }}</span>
+      <button (click)="toggleFormat()">Toggle Format</button>     
+      <button (click)="removeDog()">Delete</button>
+    </mat-card>
+</ul>
+

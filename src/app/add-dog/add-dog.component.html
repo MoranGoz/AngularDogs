@@ -8,9 +8,11 @@
           <mat-form-field>
             <input matInput type="number" [(ngModel)]="dogWeight" placeholder="Dog Weight">
             </mat-form-field>
+            <div *ngIf="dogWeight < 10" [ngClass]="{'warning' : dogWeight < 5, 'message': true }">{{dogName}} is underweight</div>
           <mat-form-field>
             <input matInput [(ngModel)]="ownerName" placeholder="Owner Name">
           </mat-form-field>
+          <button (click)="clicked()">Click</button>
     </div>
 
     <img class="img-dog" src="{{ imageUrl }}" />

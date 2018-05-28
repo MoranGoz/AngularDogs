@@ -5,12 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './add-dog.component.html',
   styleUrls: ['./add-dog.component.scss']
 })
+
 export class AddDogComponent implements OnInit {
 
   title: string = 'AngularDogs';
   dogName: string = 'Rex';
   dogWeight: number = 35;
-  ownerName: string = 'John Doe';
+  ownerName: string = 'Hey';
   imageUrl: string;
 
   constructor() {

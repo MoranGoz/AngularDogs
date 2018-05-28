@@ -9,20 +9,24 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AddDogComponent } from './add-dog/add-dog.component';
 import { AddOwnerComponent } from './add-owner/add-owner.component';
-
-
+import { DogsComponentComponent } from './dogs-component/dogs-component.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
     AddDogComponent,
-    AddOwnerComponent
+    AddOwnerComponent,
+    DogsComponentComponent
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
     MatInputModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
