@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { AddDogComponent } from './add-dog/add-dog.component';
 import { AddOwnerComponent } from './add-owner/add-owner.component';
 import { DogsComponent } from './dogs/dogs.component';
-
+import { DogsService } from './dogs.service'
 
 @NgModule({
   declarations: [
@@ -30,9 +30,9 @@ import { DogsComponent } from './dogs/dogs.component';
     MatCardModule,
     FormsModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [DogsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
