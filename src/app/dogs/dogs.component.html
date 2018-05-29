@@ -1,6 +1,6 @@
 <div class="cards-container" layout-wrap layout="row">
     <mat-card flex="30" *ngFor="let dog of dogs; let idx = index" class="dog-card">
-        <mat-card-header>
+        <mat-card-header *ngIf=" !(dog.name).includes({{queryParams.name}})" ngClass="show">{{dogName}} is underweight 
           <mat-card-title><h3>{{ idx + 1 }} - {{ dog.name }}</h3></mat-card-title>
         </mat-card-header>
         <mat-card-content>
@@ -13,6 +13,8 @@
                 <span *ngIf="dateFormat == 'shortDate'">+</span>
                 <span *ngIf="dateFormat == 'fullDate'">-</span>
               </button>
+              <button mat-button routerLink="/edit-dog/{{idx}}">edit Dog</button>
+
           </div>
           
         </mat-card-content>

@@ -14,6 +14,11 @@ import { AddDogComponent } from './add-dog/add-dog.component';
 import { AddOwnerComponent } from './add-owner/add-owner.component';
 import { DogsComponent } from './dogs/dogs.component';
 import { DogsService } from './dogs.service'
+//routing 
+import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './/app-routing.module';
+import { EditDogComponent } from './edit-dog/edit-dog.component';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @NgModule({
@@ -21,7 +26,8 @@ import { DogsService } from './dogs.service'
     AppComponent,
     AddDogComponent,
     AddOwnerComponent,
-    DogsComponent
+    DogsComponent,
+    EditDogComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,8 @@ import { DogsService } from './dogs.service'
     MatCardModule,
     FormsModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [DogsService],
   bootstrap: [AppComponent]

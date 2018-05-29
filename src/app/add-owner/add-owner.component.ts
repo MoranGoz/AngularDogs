@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//route
+import { Routes, RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-add-owner',
   templateUrl: './add-owner.component.html',

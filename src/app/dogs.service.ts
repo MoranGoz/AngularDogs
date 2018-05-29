@@ -22,4 +22,14 @@ export class DogsService {
     DOGS.push(dog);
   }
 
+  getDog(index){
+    return DOGS[index];
+  }
+
+  UpdateDog(dog,index){
+
+    DOGS[index]=dog;
+
+  }
+
 }
