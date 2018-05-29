@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Dog} from './add-dog/dog'
+import {D og} from './add-dog/dog'
 
 @Injectable()
 export class DogsService {
@@ -18,8 +18,12 @@ export class DogsService {
    return this.DOGS;
   }
   
-  addDog(dogName,dogWeight,ownerName){ 
-    this.DOGS.push({name: dogName,weight: dogWeight,owner: ownerName , birthDate:null});
+  // addDog(dogName,dogWeight,ownerName){ 
+  //   this.DOGS.push({name: dogName,weight: dogWeight,owner: ownerName , birthDate:null});
+  // }
+
+  addDog(dog){ 
+    this.DOGS.push(dog);
   }
  
 }

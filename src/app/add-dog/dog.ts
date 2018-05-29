@@ -5,5 +5,7 @@ export class Dog {
     ownerName: string = 'Hey';
     imageUrl: string;
   
-    constructor() { }
+    constructor() { 
+     
+    }
   }

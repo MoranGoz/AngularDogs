@@ -29,11 +29,8 @@ export class AddDogComponent implements OnInit {
   }
 
   submitDog(){
-    this.dogsService.addDog(
-      this.dog.dogName,
-      this.dog.dogWeight,
-      this.dog.ownerName
-    );
+    this.dogsService.addDog(this.dog);
   }
 
 }
+

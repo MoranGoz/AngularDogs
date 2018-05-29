@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Dog} from './add-dog/dog' 
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title: string = 'AngularDogs';
-  dogName: string = 'Rex';
-  dogWeight: number = 35;
-  ownerName: string = 'Hey';
   imageUrl: string;
 
   constructor() {
